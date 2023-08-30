@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #F9BC6E;
+    --black: #000000;
+    --light-color: #FFF;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header Stlying */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Setcion One Styling */
+
+.one {
+    /* position: relative; */
+    /* background: aqua; */
+    height: 130vh;
+}
+
+.one .bot-img {
+    position: absolute;
+    top: 61%;
+    /* right: -100px; */
+    left: -20%;
+    z-index: -999;
+}
+
+.sec1 {
+    display: flex;
+}
+
+.sec1 .sec1-left {
+    padding-top: 10rem;
+    padding-left: 10rem;
+}
+
+.sec1 .sec1-left .text-one {
+    color: var(--black);
+    /* font-family: Product Sans; */
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.7%;
+    letter-spacing: -1.14px;
+}
+
+.sec1 .sec1-left .text-one span {
+    color: var(--primary);
+}
+
+.sec1 .sec1-left .text-two {
+    margin-top: 2rem;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 119.7%;
+    opacity: 0.8;
+}
+
+.sec1-left .adds {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32rem;
+    gap: 1px;
+}
+
+.sec1-left .adds img {
+    width: 150px;
+}
+
+.sec1-left button {
+    background: var(--primary);
+    margin-top: 2rem;
+    padding: 1rem 1.4rem;
+    border: none;
+    color: var(--light-color);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sec1-right img {
+    position: absolute;
+    top: 6%;
+    right: 0;
+    width: 50%;
+    /* height: 65rem; */
+}
+
+/* Section Two Styling */
+
+.sec2 {
+    padding: 0 0 12rem 0;
+}
+
+.sec2 .sec2-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 .sec2-heading h2 {
+    /* color: #000; */
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.2%;
+    /* 71.344px */
+}
+
+.sec2 .sec2-heading .line {
+    width: 170px;
+    height: 5px;
+    margin-top: 1.5rem;
+    background: var(--primary, #F9BC6E);
+}
+
+.sec2 .sec2-body {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 0 0 0;
+}
+
+.sec2 .sec2-body .content-one p {
+    color: var(--primary, #F9BC6E);
+    /* font-family: HK Grotesk; */
+    font-size: 124px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45.2%;
+    /* 56.048px */
+    letter-spacing: -5.58px;
+    opacity: 0.25;
+}
+
+.sec2-body .content-one {
+    display: flex;
+    /* background: aqua; */
+}
+
+.sec2-body .content-one .content {
+    display: flex;
+    background: aqua;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 69px 114px 0px rgba(0, 0, 0, 0.08);
+    padding: 2rem 2.5rem;
+}
+
+.content-one .content .content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-one .content .content-text .content-line {
+    width: 98px;
+    height: 3px;
+    background: var(--primary);
+    margin-top: 1rem;
+}
+
+.content-one .content .content-text h3 {
+    color: var(--primary, #F9BC6E);
+    /* font-family: Product Sans; */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.2%;
+    /* 49.392px */
+}
+
+.content-one .content .content-text h6 {
+    color: #000;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    /* 30.726px */
+}
+
+.num2 {
+    display: flex;
+    justify-content: flex-end;
+    z-index: -50;
+}
+
+.num3 {
+    z-index: -60;
+}
+
+.num4 {
+    display: flex;
+    justify-content: flex-end;
+    z-index: -70;
+}
+
+.num2 p,
+.num4 p {
+    position: absolute;
+    right: 4%;
+}
+
+.num1 p,
+.num3 p {
+    position: absolute;
+    left: 1%;
+}
+
+/* Section Three Styling */
+
+.three {
+    background: var(--primary);
+    color: var(--light-color);
+}
+
+.sec3 {
+    display: flex;
+    gap: 5rem;
+    padding: 10rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec3 .sec3-left .sec3-line {
+    width: 130px;
+    height: 3px;
+    background: var(--light-color);
+}
+
+.sec3 .sec3-left h3 {
+    margin-top: .8rem;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.3%;
+    /* 82.112px */
+}
+
+.sec3 .sec3-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sec3 .sec3-right form input {
+    width: 500px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 1.7rem;
+    /* opacity: 0.5; */
+}
+
+.sec3 .sec3-right form button {
+    width: 500px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    color: var(--light-color);
+    background: #C59E6F;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+/* Section Four Styling */
+
+.four {
+    padding: 8rem 0;
+}
+
+.sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4 .sec4-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4 .sec4-top h3 {
+    margin-top: .8rem;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.3%;
+}
+
+.sec4 .sec4-top .sec4-line {
+    margin-top: 1rem;
+    width: 130px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.sec4-bottom {
+    margin-top: 3rem;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    box-shadow: 0px 69px 114px 0px rgba(0, 0, 0, 0.136);
+    border-radius: 10px;
+}
+
+.sec4-bottom .squr {
+    width: 253px;
+    height: 292px;
+    border-radius: 8px;
+    background: var(--primary, #F9BC6E);
+    position: relative;
+}
+
+.sec4-bottom .squr img {
+    position: absolute;
+    bottom: -15%;
+    left: 5%;
+}
+
+.sec4-bottom .sec4-text h5 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 51px;
+    /* 159.375% */
+    letter-spacing: 0.2px;
+}
+
+.sec4-bottom .sec4-text h6 {
+    color: var(--primary, #F9BC6E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 3rem;
+}
+
+/* Section Five Styling */
+
+.five {
+    background: var(--primary);
+}
+
+.sec5 {
+    display: flex;
+    gap: 5rem;
+    padding: 10rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec5 .sec5-left {
+    width: 40%;
+}
+
+.sec5 .sec5-left .sec5-line {
+    width: 120px;
+    height: 3px;
+    background: var(--light-color);
+}
+
+.sec5 .sec5-left h3 {
+    margin-top: .8rem;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.3%;
+    /* 82.112px */
+    color: var(--light-color);
+}
+
+.sec5-content {
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+    width: 70%;
+}
+
+.sec5-content::-webkit-scrollbar {
+    display: none;
+}
+
+.sec5-content .business {
+    border-radius: 30px;
+    background: #DFA762;
+    box-shadow: 0px 69px 114px 0px rgba(124, 20, 253, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    min-width: 410px;
+    /* background-size: cover important !; */
+}
+
+.sec5-content .business h3 {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 130.909% */
+    letter-spacing: -1px;
+}
+
+.sec5-content .business h6 {
+    margin-top: 1rem;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    /* 155.556% */
+}
+
+.sec5-content .business button {
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    background: #FFF;
+    border: none;
+    width: 130px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sec5-content .business button i {
+    /* color: var(--black); */
+    font-size: 20px;
+}
+
+/* Section Six Styling */
+
+.sec6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.sec6 .sec6-left {
+    width: 100%;
+}
+
+.sec6 .sec6-left h3 {
+    color: #000;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.2%;
+    /* 71.344px */
+}
+
+.sec6 .sec6-left h6 {
+    margin-top: 2rem;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42.5px;
+    /* 193.182% */
+}
+
+.sec6 .sec6-left button {
+    margin-top: 2rem;
+    border-radius: 15px;
+    background: var(--primary);
+    border: none;
+    width: 200px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white, #FFF);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec6 .sec6-left button i {
+    /* color: var(--black); */
+    font-size: 20px;
+}
+
+.sec6 .sec6-right img {
+    width: 900px;
+}

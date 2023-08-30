@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #F9BC6E;
+    --black: #000000;
+    --light-color: #FFF;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--black);
+    padding: 5rem 0;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .first h6 {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.5px;
+    /* 175% */
+    letter-spacing: 0.2px;
+    opacity: 0.8;
+}
+
+.footer .first .socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer .first .socials i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer .second {
+    display: flex;
+    gap: 20rem;
+}
+
+.second .second-left h5,
+.second-right h5 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.5px;
+    /* 143.182% */
+    letter-spacing: 0.2px;
+}
+
+.second .second-left nav,
+.second-right nav {
+    margin-top: 2rem;
+}
+
+.second .second-left nav ul li,
+.second-right nav ul li {
+    list-style: none;
+    padding: .4rem 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.5px;
+    /* 175% */
+    letter-spacing: 0.2px;
+    opacity: 0.8;
+}
+
+.second .second-left nav ul li a {
+    color: var(--black);
+    cursor: pointer;
+}
